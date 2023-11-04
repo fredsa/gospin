@@ -1,3 +1,6 @@
 #!/bin/bash
 
-go run . $*
+(
+    cd $( dirname "$0" )
+    go run . $*
+)
